@@ -64,7 +64,7 @@ When the docker container starts, it creates database named __w3schools__ with t
     
 and inserts the respective data. 
 
-## Features
+## Existing Features
 1. Get and list all Products
 2. Get and list all Categories
 3. Get and list all Suppliers
@@ -83,6 +83,22 @@ and inserts the respective data.
 16. Sort by Entity Fields
 17. Pagination of the Table
 
+## Added Features
+1. Get and list all Orders
+2. Get and list all Customers
+3. Get and list all Shippers
+4. Create a new Order
+5. Create a new Customer
+6. Create a new Shipper
+7. Update an existing Order
+8. Update an existing Customer
+9. Update an existing Shipper
+10. Delete a Order
+11. Delete a Customer
+12. Delete a Shipper
+13. Added CSV-Export by Shippers
+14. Added new Logo
+
 ## Journal
 ### 30.10.2024
 The setup was difficult because I lacked Linux and Docker experience. After some trial and error, it finally worked.
@@ -97,12 +113,5 @@ Tried again but came not really far because I had to wait very long while saving
 Made some reasearch about the whole project an topics. Tried many times to setup and creat something.
 
 ### 03.11.2024
-Had to reset and setup the whole VM/wsl with Ismail again. I installed it using WSL an updated the journal.
-Added as followed:
-- 3 Entities with the GET Method (Products, Categories, Suppliers)
-- Creating of 3 Entities with POST Method is working (Products, Categories, Suppliers)
-- Update of 3 Entities with PATCH Method is working (Products, Categories, Suppliers)
-- Delete of 3 Entities with the DELETE Method is working (Products, Categories, Suppliers)
-- Added new Feature Filtering (Filter Entities)
-- Added Feature Pagination
-- Added Sort function (click table head)
+Had to reset and setup the whole VM/wsl with Ismail again. Installed it using WSL.
+Added the features listed above and updated the journal.
