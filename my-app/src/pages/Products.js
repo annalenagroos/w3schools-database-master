@@ -118,7 +118,6 @@ function ProductList() {
 
   const filteredProducts = sortedProducts.filter(product => {
     return (
-      product.ProductName.toLowerCase().includes(filterProductName.toLowerCase()) &&
       (filterCategory === '' || product.CategoryID === parseInt(filterCategory)) &&
       (filterSupplier === '' || product.SupplierID === parseInt(filterSupplier))
     );
@@ -179,7 +178,7 @@ function ProductList() {
         </select>
         <div className="flex justify-end">
           <button 
-            className="bg-gray-300 text-white px-4 py-2 rounded mb-4"
+            className="bg-gray-500 text-white px-4 py-2 rounded mb-4"
             onClick={resetFilters}
           >
             Reset Filters
@@ -187,7 +186,7 @@ function ProductList() {
         </div>
       </div>
       <button 
-        className="bg-blue-300 text-white px-4 py-2 rounded mb-4"
+        className="bg-blue-500 text-white px-4 py-2 rounded mb-4"
         onClick={() => setEditableProductId('new')}
       >
         Add New Product
@@ -241,7 +240,7 @@ function ProductList() {
           </select>
           <div className="flex space-x-2">
             <button
-              className="bg-green300 text-white px-4 py-2 rounded"
+              className="bg-green-500 text-white px-4 py-2 rounded"
               onClick={() => {
                 const newProduct = editedProduct['new'];
                 fetch(`${api}/products`, {
@@ -266,7 +265,7 @@ function ProductList() {
               Save
             </button>
             <button 
-              className="bg-red-300 text-white px-4 py-2 rounded"
+              className="bg-red-500 text-white px-4 py-2 rounded"
               onClick={() => setEditableProductId(null)}
             >
               Cancel
@@ -383,13 +382,13 @@ function ProductList() {
                 {editableProductId === product.ProductID ? (
                   <div className="flex space-x-2">
                     <button 
-                      className="bg-green-300 text-white px-4 py-2 rounded"
+                      className="bg-green-500 text-white px-4 py-2 rounded"
                       onClick={() => handleSave(product.ProductID)}
                     >
                       Save
                     </button>
                     <button 
-                      className="bg-red-300 text-white px-4 py-2 rounded"
+                      className="bg-red-500 text-white px-4 py-2 rounded"
                       onClick={() => setEditableProductId(null)}
                     >
                       Cancel
@@ -398,13 +397,13 @@ function ProductList() {
                 ) : (
                   <div className="flex space-x-2">
                     <button 
-                      className="bg-yellow-300 text-white px-4 py-2 rounded"
+                      className="bg-yellow-500 text-white px-4 py-2 rounded"
                       onClick={() => setEditableProductId(product.ProductID)}
                     >
                       Edit
                     </button>
                     <button 
-                      className="bg-red-300 text-white px-4 py-2 rounded"
+                      className="bg-red-500 text-white px-4 py-2 rounded"
                       onClick={() => handleDelete(product.ProductID)}
                     >
                       Delete
@@ -418,7 +417,7 @@ function ProductList() {
       </table>
       <div className="flex justify-between mt-4">
         <button
-          className="bg-gray-300 text-white px-4 py-2 rounded"
+          className="bg-gray-500 text-white px-4 py-2 rounded"
           onClick={handlePreviousPage}
           disabled={currentPage === 1}
         >
@@ -426,7 +425,7 @@ function ProductList() {
         </button>
         <span>Page {currentPage} of {totalPages}</span>
         <button
-          className="bg-gray-300 text-white px-4 py-2 rounded"
+          className="bg-gray-500 text-white px-4 py-2 rounded"
           onClick={handleNextPage}
           disabled={currentPage === totalPages}
         >
