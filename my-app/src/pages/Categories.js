@@ -136,7 +136,7 @@ function CategoryList() {
       </div>
       <div className="flex justify-end">
         <button 
-          className="bg-gray-500 text-white px-4 py-2 rounded mb-4"
+          className="bg-gray-300 text-white px-4 py-2 rounded mb-4"
           onClick={resetFilters}
         >
           Reset Filters
@@ -144,7 +144,7 @@ function CategoryList() {
       </div>
       
       <button 
-        className="bg-blue-500 text-white px-4 py-2 rounded mb-4"
+        className="bg-blue-300 text-white px-4 py-2 rounded mb-4"
         onClick={() => setEditableCategoryId('new')}
       >
         Add New Category
@@ -167,7 +167,7 @@ function CategoryList() {
           />
           <div className="flex space-x-2">
             <button
-              className="bg-green-500 text-white px-4 py-2 rounded"
+              className="bg-green-300 text-white px-4 py-2 rounded"
               onClick={() => {
                 const newCategory = editedCategory['new'];
                 fetch(`${api}/categories`, {
@@ -192,7 +192,7 @@ function CategoryList() {
               Save
             </button>
             <button 
-              className="bg-red-500 text-white px-4 py-2 rounded"
+              className="bg-red-300 text-white px-4 py-2 rounded"
               onClick={() => setEditableCategoryId(null)}
             >
               Cancel
@@ -248,13 +248,13 @@ function CategoryList() {
                 {editableCategoryId === category.CategoryID ? (
                   <div className="flex space-x-2">
                     <button 
-                      className="bg-green-500 text-white px-4 py-2 rounded"
+                      className="bg-green-300 text-white px-4 py-2 rounded"
                       onClick={() => handleSave(category.CategoryID)}
                     >
                       Save
                     </button>
                     <button 
-                      className="bg-red-500 text-white px-4 py-2 rounded"
+                      className="bg-red-300 text-white px-4 py-2 rounded"
                       onClick={() => setEditableCategoryId(null)}
                     >
                       Cancel
@@ -263,13 +263,13 @@ function CategoryList() {
                 ) : (
                   <div className="flex space-x-2">
                     <button 
-                      className="bg-yellow-500 text-white px-4 py-2 rounded"
+                      className="bg-yellow-300 text-white px-4 py-2 rounded"
                       onClick={() => setEditableCategoryId(category.CategoryID)}
                     >
                       Edit
                     </button>
                     <button 
-                      className="bg-red-500 text-white px-4 py-2 rounded"
+                      className="bg-red-300 text-white px-4 py-2 rounded"
                       onClick={() => handleDelete(category.CategoryID)}
                     >
                       Delete
@@ -283,7 +283,7 @@ function CategoryList() {
       </table>
       <div className="flex justify-between mt-4">
         <button
-          className="bg-gray-500 text-white px-4 py-2 rounded"
+          className="bg-gray-300 text-white px-4 py-2 rounded"
           onClick={handlePreviousPage}
           disabled={currentPage === 1}
         >
@@ -291,7 +291,7 @@ function CategoryList() {
         </button>
         <span>Page {currentPage} of {totalPages}</span>
         <button
-          className="bg-gray-500 text-white px-4 py-2 rounded"
+          className="bg-gray-300 text-white px-4 py-2 rounded"
           onClick={handleNextPage}
           disabled={currentPage === totalPages}
         >
