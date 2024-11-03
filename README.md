@@ -15,7 +15,7 @@ Make sure that the following software is installed:
 
 ## Fork to your github account
 Go to github.com, create a new account or login.
-- Fork this repo (https://github.com/ibuenuel/w3schools-database.git)
+- Fork this repo (https://github.com/annalenagroos/w3schools-database-master.git)
 
 Now you have a repository w3schools-database in your github account.
 Clone that with:
@@ -77,25 +77,32 @@ and inserts the respective data.
 10. Delete a Product
 11. Delete a Categorie
 12. Delete a Supplier
-13. Filter by Category or Supplier (If its provided, to test see Products Page)
+13. Filter by Category or Supplier
 14. Search Entity by Name
 15. Reset Filters and Search Term with a Button
 16. Sort by Entity Fields
 17. Pagination of the Table
 
 ## Journal
-### 14.09.2024
-The project setup was quite challenging, but I was able to install it successfully using WSL. VirtualBox used too much RAM and the VM froze a lot, so I switched to WSL.
+### 30.10.2024
+The setup was difficult because I lacked Linux and Docker experience. After some trial and error, it finally worked.
 
-### 28.10.2024
-Made some reasearch about routing and added routing functionality to the application. Added the needed Features as follows:
-- 3 Entities will be shown with the GET Method (Products, Categories, Suppliers)
-- Creating of 3 different  Entities with POST Method is working (Products, Categories, Suppliers)
-- Update of 3 different  Entities with PATCH Method is working (Products, Categories, Suppliers)
-- Delete of 3 different Entities with the DELETE Method is working (Products, Categories, Suppliers)
+### 31.10.2024
+I tried to continue working, but I kept getting various error messages and had to recreate the Docker.
+
+### 01.11.2024
+Tried again but came not really far because I had to wait very long while saving.
+
+### 02.11.2024
+Made some reasearch about the whole project an topics. Tried many times to setup and creat something.
+
+### 03.11.2024
+Had to reset and setup the whole VM/wsl with Ismail again. I installed it using WSL an updated the journal.
+Added as followed:
+- 3 Entities with the GET Method (Products, Categories, Suppliers)
+- Creating of 3 Entities with POST Method is working (Products, Categories, Suppliers)
+- Update of 3 Entities with PATCH Method is working (Products, Categories, Suppliers)
+- Delete of 3 Entities with the DELETE Method is working (Products, Categories, Suppliers)
 - Added new Feature Filtering (Filter Entities)
 - Added Feature Pagination
 - Added Sort function (click table head)
-
-Wrote the technical documentation, documented the features in Markdown and updated the journal.
-
